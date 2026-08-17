@@ -4,4 +4,24 @@ version = "0.1.0"
 description = "Smart Tender Documentation Summarizer"
 readme = "README.md"
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "anthropic>=0.122.0",
+    "black>=26.5.1",
+    "fastapi[all]>=0.141.1",
+    "flake8>=7.3.0",
+    "isort>=8.0.1",
+    "loguru>=0.7.3",
+    "openai>=3.1.0",
+    "pymupdf>=1.28.2",
+    "pypdf>=6.16.1",
+    "pytesseract>=0.3.13",
+    "python-multipart>=0.0.32",
+]
+
+[tool.black]
+line-length = 88
+target-version = ['py312']
+
+[tool.isort]
+profile = "black"
+line_length = 88
